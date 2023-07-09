@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="img/faviconn.ico" rel="icon">
+  <link href="img/icon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Vendor CSS Files -->
@@ -33,7 +33,7 @@
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="img/icon_x48.png" alt="">
+        <img src="img/icon.png" alt="">
         <span class="d-none d-lg-block">NutriApp</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -125,7 +125,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <img src="img/profile/profile_2.png" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">Kevin Andrade</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -138,7 +138,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="user-profile.html">
                 <i class="bi bi-person-circle"></i>
                 <span>Mi Perfil</span>
               </a>
@@ -148,7 +148,7 @@
             </li>
   
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" href="login.html">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Salir</span>
               </a>
@@ -168,47 +168,63 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
+        <a class="nav-link " href="index.html">
           <i class="bi bi-house"></i>
-          <span>Principal</span>
+          <span>Inicio</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
-
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-flag"></i><span>Planes</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="guide.html">
+              <i class="bi bi-circle"></i><span>Plan Nutricional</span>
+            </a>
+          </li>
+          <li>
+            <a href="exercise.html">
+              <i class="bi bi-circle"></i><span>Plan de Ejercicios</span>
+            </a>
+          </li>         
+        </ul>
+      </li><!-- End Components Nav -->
+      
       <li class="nav-item">
         <a class="nav-link collapsed"  href="feed.html">
           <i class="bi bi-clipboard"></i><span>Crear Receta</span>
         </a>
       </li>
-  
       <li class="nav-item">
-        <a class="nav-link" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-flag"></i><span>Planes</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-graph-up-arrow"></i><span>Estadisticas</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a class="nav-link" href="exercise.html">
-              <i class="bi bi-circle"></i><span>Plan de Ejercicios</span>
+            <a href="graph.html">
+              <i class="bi bi-circle"></i><span>Logros y Metas</span>
             </a>
           </li>
           <li>
-            <a href="guide.html">
-              <i class="bi bi-circle"></i><span>Plan Nutricional</span>
+            <a href="workout.html">
+              <i class="bi bi-circle"></i><span>Entrenamiento</span>
             </a>
-          </li>         
+          </li>
+          <li>
+            <a href="valor.html">
+              <i class="bi bi-circle"></i><span>Peso</span>
+            </a>
+          </li>
         </ul>
-      </li><!-- End Components Nav -->
-  
-      <li class="nav-item">
-        <a class="nav-link collapsed"  href="graph.html">
-          <i class="bi bi-graph-down"></i><span>Estadisticas</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed"  href="alarm.html">
-          <i class="bi bi-clock-fill"></i><span>Configurar Alarma</span>
-        </a>
-      </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed"  href="alarm.html">
+            <i class="bi bi-gear"></i><span>Configuración</span>
+          </a>
+        </li>
+      </li><!-- End Forms Nav -->
 
     </ul>
 
@@ -252,7 +268,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="copyright">
-      Copyright &copy; <strong><span>NutriApp</span></strong>. Derechos Reservados
+      Copyright &copy; <strong><span>Nutri-Star</span></strong>. Derechos Reservados
     </div>
     
   </footer><!-- End Footer -->
