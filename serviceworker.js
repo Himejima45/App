@@ -7,7 +7,7 @@ var appshellfiles = [
     '/graph.html',
     '/alarm.html',
     '/execise.html',
-    '/tab.min.js', '/save.min.css', '/manifest.json',
+    '/manifest.json',
 
 ]
 appshellfiles = []

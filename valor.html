@@ -34,7 +34,7 @@
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="img/icon_x48.png" alt="">
+        <img src="img/icon.png" alt="">
         <span class="d-none d-lg-block">NutriApp</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -126,7 +126,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <img src="img/profile/profile_7.png" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">Kevin Andrade</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -139,7 +139,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="user-profile.html">
                 <i class="bi bi-person-circle"></i>
                 <span>Mi Perfil</span>
               </a>
@@ -149,7 +149,7 @@
             </li>
   
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" href="login.html">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Salir</span>
               </a>
@@ -229,43 +229,128 @@
 
   </ul>
 
-</aside><!-- End Sideba
+</aside>
 
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Plan Nutricional</h1>
+      <h1>Valor de alimentos</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item">Crear Plan</li>
+          <li class="breadcrumb-item">Valor nutricional</li>
         </ol>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
 
     <section class="section">
-      <div class="row justify-content-center">
-      <div class="col-8">
+      <div class="row">
+        <div class="col-lg-12">
 
-        <div class="row">
-        <div class="card info-card">
-          <img src="img/batidos_4.jpeg" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title">Plan con Especialista</h5>
-            <button type="button" class="btn btn-primary rounded-pill"><i class="bi bi-star"> </i>Empezar</button>
-           </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Valor nutricional de alimentos</h5>
+              
+              <!-- Table with stripped rows -->
+              <table class="table">
+                <thead class="table-primary">
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Calorias</th>
+                    <th scope="col">Hc</th>
+                    <th scope="col">Proteinas</th>
+                    <th scope="col">Grasas</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Leche chocolatada</td>
+                    <td>62</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>1.1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Leche descremada  en polvo</td>
+                    <td>36</td>
+                    <td>10</td>
+                    <td>3.5</td>
+                    <td>0.1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Yogur con cereale</td>
+                    <td>48</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>0.05</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td >Yogur descr. y corn flakes</td>
+                    <td>63</td>
+                    <td>11.4</td>
+                    <td>4.2</td>
+                    <td>0.04</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td >Queso crema</td>
+                    <td>245</td>
+                    <td>3.7</td>
+                    <td>8.2</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td >Queso cottage</td>
+                    <td>95</td>
+                    <td>2</td>
+                    <td>11.4</td>
+                    <td>4.5</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td >Yema de huevo</td>
+                    <td>341</td>
+                    <td>2</td>
+                    <td>16</td>
+                    <td>29.2</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td >Hamburguesa</td>
+                    <td>230</td>
+                    <td>0.5</td>
+                    <td>14</td>
+                    <td>18.3</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td >Carne de cerdo gorda</td>
+                    <td>346</td>
+                    <td>0</td>
+                    <td>14.6</td>
+                    <td>31.4</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td >Ciervo</td>
+                    <td>120</td>
+                    <td>0</td>
+                    <td>22.9</td>
+                    <td>2.4</td>
+                  </tr> 
+                </tbody>
+              </table>
+              <!-- End Table with stripped rows -->
+            </div>
           </div>
-        <div class="card info-card">
-          <img src="img/receta_3.jpg" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title">Plan Personalizado</h5>
-            <button type="button" class="btn btn-primary rounded-pill mb-1">Empezar 
-              <!-- <span class="badge bg-primary"><i class="bi bi-star me-1"></i></span> -->
-            </button>
         </div>
       </div>
-    </div>
-  </div>
-</div>
     </section>
 
 
@@ -294,6 +379,29 @@
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
   <script src="serviceworker.js"></script>
+  <script> 
+        $(document).ready(function() {
+          var url = 'http://localhost:2700/api/valores';
+
+          $('#tablaValores').Datatable({
+            "ajax":{
+              "url": url,
+              "dataSrc":""
+            },
+            "columns":[
+              {"data":"id"},
+              {"data":"nombre"},
+              {"data":"calorias"},
+              {"data":"hc"},
+              {"data":"proteinas"},
+              {"data":"grasas"},
+            ],
+            "columnsDefs":""
+
+          });
+
+        });
+      </script>
 
 
 </body>

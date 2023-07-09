@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>NutriApp | Alarmas </title>
+  <title>NutriApp | Receta Nutricional </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="img/faviconn.ico" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/favicon.ico" rel="icon">
 
   <!-- Vendor CSS Files -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +20,8 @@
   <link href="quill/quill.bubble.css" rel="stylesheet">
   <link href="remixicon/remixicon.css" rel="stylesheet">
   <link href="simple-datatables/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
@@ -162,78 +163,115 @@
 
   </header><!-- End Header -->
 
-  <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
+ <!-- ======= Sidebar ======= -->
+ <aside id="sidebar" class="sidebar">
 
-    <ul class="sidebar-nav" id="sidebar-nav">
+  <ul class="sidebar-nav" id="sidebar-nav">
 
+    <li class="nav-item">
+      <a class="nav-link " href="index.html">
+        <i class="bi bi-house"></i>
+        <span>Inicio</span>
+      </a>
+    </li><!-- End Dashboard Nav -->
+
+    
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-flag"></i><span>Planes</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="guide.html">
+            <i class="bi bi-circle"></i><span>Plan Nutricional</span>
+          </a>
+        </li>
+        <li>
+          <a href="exercise.html">
+            <i class="bi bi-circle"></i><span>Plan de Ejercicios</span>
+          </a>
+        </li>         
+      </ul>
+    </li><!-- End Components Nav -->
+    
+    <li class="nav-item">
+      <a class="nav-link collapsed"  href="feed.html">
+        <i class="bi bi-clipboard"></i><span>Crear Receta</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-graph-up-arrow"></i><span>Estadisticas</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="graph.html">
+            <i class="bi bi-circle"></i><span>Logros y Metas</span>
+          </a>
+        </li>
+        <li>
+          <a href="workout.html">
+            <i class="bi bi-circle"></i><span>Entrenamiento</span>
+          </a>
+        </li>
+        <li>
+          <a href="valor.html">
+            <i class="bi bi-circle"></i><span>Peso</span>
+          </a>
+        </li>
+      </ul>
       <li class="nav-item">
-        <a class="nav-link collapsed " href="index.html">
-          <i class="bi bi-house"></i><span>Principal</span>
-        </a>
-      </li><!-- End Dashboard Nav -->
-
-
-      <li class="nav-item">
-        <a class="nav-link collapsed"  href="guide.html">
-          <i class="bi bi-clipboard-data"></i><span>Receta Nutricional</span>
+        <a class="nav-link collapsed"  href="alarm.html">
+          <i class="bi bi-gear"></i><span>Configuración</span>
         </a>
       </li>
+    </li><!-- End Forms Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed"  href="exercise.html">
-          <i class="bi bi-flag"></i><span>Plan de Ejercicios</span>
-        </a>
-      </li>
+  </ul>
 
-      <li class="nav-item">
-        <a class="nav-link collapsed"  href="graph.html">
-          <i class="bi bi-graph-down"></i><span>Estadisticas</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link"  href="alarm.html">
-          <i class="bi bi-clock-fill"></i><span>Configurar Alarma</span>
-        </a>
-      </li>
-
-    </ul>
-
-  </aside><!-- End Sidebar-->
+</aside><!-- End Sideba
 
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Configurar Alarma</h1>
+      <h1>Plan Nutricional</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item">Configurar</li>
+          <li class="breadcrumb-item">Crear Plan</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
     <section class="section">
       <div class="row justify-content-center">
-        <div class="col-9">  
-          <div class="card">
-            <div class="card-header text-center">Configurar Alarma</div>
-              <div class="card-body justify-content-center">
-                <h5 class="card-title text-center">Añadir o Editar Alarma</h5>
-                 <div class="row justify-content-center">
-                   <div class="col-3">
-                     <a type="button" class="btn btn-primary mb-3"><i class="bi bi-pencil-square"></i></a>
-                     <a type="button" class="btn btn-success mb-3"><i class="bi bi-plus-square"></i></a>
-                   </div>
-                 </div>
-                </div>
-              <div class="card-footer text-center">
-                    Pulsa el boton <i class="bi bi-plus-square"></i> para añadir alarma <br>
-                    Pulsa el boton <i class="bi bi-pencil-square"></i> para editar alarma
+      <div class="col-8">
+
+        <div class="row">
+        <div class="card info-card">
+          <div class="container">
+            <h1>Lista de Tareas</h1>
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Agregar tarea...">
+                    <button class="btn-add">+</button>
+                </form>
             </div>
-          </div>
+            <div class="li-container">
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="empty">
+                <p>No tienes tareas pendientes.</p>
+            </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
     </section>
+
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -241,6 +279,7 @@
     <div class="copyright">
       Copyright &copy; <strong><span>NutriApp</span></strong>. Derechos Reservados
     </div>
+    
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
