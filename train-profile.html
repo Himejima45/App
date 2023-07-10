@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>NutriApp | Plan de Ejercicios </title>
+  <title>Nutri-Star | Pefil Entrenador</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="img/icon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="manifest" href="manifest.json">
 
   <!-- Vendor CSS Files -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,6 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
-  <link rel="manifest" href="manifest.json">
 
 <body>
 
@@ -34,18 +33,14 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="img/icon.png" alt="">
-        <span class="d-none d-lg-block">NutriApp</span>
+        <span class="d-none d-lg-block">Nutri-Star<span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
+
+
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
-
-        <li class="nav-item d-block d-lg-none">
-          <a class="nav-link nav-icon search-bar-toggle " href="#">
-            <i class="bi bi-search"></i>
-          </a>
-        </li><!-- End Search Icon-->
 
         <li class="nav-item dropdown">
 
@@ -56,8 +51,7 @@
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
             <li class="dropdown-header">
-              Tienes 4 notificaciones
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+              Tienes 4 notificaciones 
             </li>
             <li>
               <hr class="dropdown-divider">
@@ -139,14 +133,14 @@
 
             <li>
               <a class="dropdown-item d-flex align-items-center" href="user-profile.html">
-                <i class="bi bi-person-circle"></i>
+                <i class="bi bi-person"></i>
                 <span>Mi Perfil</span>
               </a>
             </li>
             <li>
               <hr class="dropdown-divider">
             </li>
-  
+
             <li>
               <a class="dropdown-item d-flex align-items-center" href="login.html">
                 <i class="bi bi-box-arrow-right"></i>
@@ -204,24 +198,24 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="graph.html">
+            <a href=" ">
               <i class="bi bi-circle"></i><span>Logros y Metas</span>
             </a>
           </li>
           <li>
-            <a href="workout.html">
+            <a href=" ">
               <i class="bi bi-circle"></i><span>Entrenamiento</span>
             </a>
           </li>
           <li>
-            <a href="valor.html">
+            <a href=" ">
               <i class="bi bi-circle"></i><span>Peso</span>
             </a>
           </li>
         </ul>
         <li class="nav-item">
           <a class="nav-link collapsed"  href="alarm.html">
-            <i class="bi bi-gear"></i><span>Configuración</span>
+            <i class="bi bi-clock"></i><span>Configuración</span>
           </a>
         </li>
       </li><!-- End Forms Nav -->
@@ -233,44 +227,104 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Plan de Ejercicios</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">Seleccionar Modo</li>
-        </ol>
-      </nav>
+      <h1>Perfil</h1>
     </div><!-- End Page Title -->
 
     <section class="section">
       <div class="row justify-content-center">
-      <div class="col-8">
-        <div class="row">
-        <div class="card info-card">
-          <img src="img/ejer_11.jpg" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title">Entrenador Personal</h5>
-            <a type="button" href="train-profile.html" class="btn btn-primary rounded-pill"><i class="bi bi-star"> </i>Empezar</a>
-          </div>
-        </div>
-          <div class="card info-card">
-            <img src="img/ejer_1.jpg" class="card-img-fluid" alt="...">
-              
-              <div class="card-body text-center">
-                <h5 class="card-title">Plan Personalizado</h5>
-                <button type="button" class="btn btn-primary rounded-pill">Empezar</button>
+        <div class="col-lg-8">
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/profile/profile_6.png" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h2 class="card-title">Entrenador Personal</h2>
+                  <h5>Roma Gomezs</h5>
+
+                  <ul>
+                    <li><i class="bi bi-person-check"></i> 04/1/87</li>
+                    <li><i class="bi bi-envelope-fill"></i> RomFit456@email.com</li>
+                    <li><i class="bi bi-whatsapp"></i> (+58)414-999821</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-       </div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/profile/profile_2.png" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h2 class="card-title">TRX | Crossfit</h2>
+                  <h5>Rodrigo Alvez</h5>
+
+                  <ul>
+                    <li><i class="bi bi-person-check"></i> 05/8/90</li>
+                    <li><i class="bi bi-envelope-fill"></i> rorofit_932@email.com</li>
+                    <li><i class="bi bi-whatsapp"></i> (+58)412-987888</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/profile/profile_8.png" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h2 class="card-title">Calistenia</h2>
+                  <h5>Felicia Pastrinni</h5>
+
+                  <ul>
+                    <li><i class="bi bi-person-check"></i> 07/7/95</li>
+                    <li><i class="bi bi-envelope-fill"></i> Frafit_inni@email.com</li>
+                    <li><i class="bi bi-whatsapp"></i> (+58)412-228721</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/profile/profile_4.png" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h2 class="card-title">Acondicionador Fisico</h2>
+                  <h5>Enderson Bravo</h5>
+
+                  <ul>
+                    <li><i class="bi bi-person-check"></i> 4/11/98</li>
+                    <li><i class="bi bi-envelope-fill"></i> Graph.re@email.com</li>
+                    <li><i class="bi bi-whatsapp"></i> (+58)426-699921</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="copyright">
-      Copyright &copy; <strong><span>Nutri-Star</span></strong>. Derechos Reservados
+      Copyright &copy; <strong><span>Nutri-Star</span></strong>. Derechos Reservados <img src="img/icon.png" style="width: 4%; height: 4%;" alt="">
+      <!-- <img src="img/Logooo.png" style="width: 10%; height: 10%;" alt=""> -->
     </div>
-    
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
