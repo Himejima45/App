@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>NutriApp | Receta Nutricional </title>
+  <title>NutriApp | Peso </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="img/icon.png" rel="icon">
+  <link href="img/favicon.ico" rel="icon">
 
   <!-- Vendor CSS Files -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,16 +36,10 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="img/icon.png" alt="">
-        <span class="d-none d-lg-block">Nutri-Star</span>
+        <span class="d-none d-lg-block">NutriApp</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
-
-    <div class="reloj">
-      <p class="fecha"></p>
-      <p class="tiempo"></p>
-     </div>
-     
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
 
@@ -257,31 +251,138 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Crear Receta Nutricional</h1>
+      <h1>Datos nutricionales</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item">Crear Receta</li>
+          <li class="breadcrumb-item">Valor nutricional</li>
         </ol>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
 
-    <section class="section">
+    <section class="section dashboard">
       <div class="row justify-content-center">
-      <div class="col-lg-8">
+        <div class="col-lg-11">
+
         <div class="row">
-        <div class="card info-card">
-          <img src="img/batidos_2.jpg" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title">Crear Receta</h5>
-            <button type="button" class="btn btn-success rounded-pill"><i class="bi bi-plus">Empezar</i></button>
+          <!-- <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Valor nutricional de alimentos</h5> -->
+              
+              <!-- Table with stripped rows -->
+              <table class="table">
+                <thead class="table-primary">
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Calorias</th>
+                    <th scope="col">Hc</th>
+                    <th scope="col">Proteinas</th>
+                    <th scope="col">Grasas</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <th scope="row">11</th>
+                    <td>Liebre</td>
+                    <td>153</td>
+                    <td>0</td>
+                    <td>21</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">12</th>
+                    <td>Higado de Vaca</td>
+                    <td>134</td>
+                    <td>3.6</td>
+                    <td>19.8</td>
+                    <td>3.9</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">13</th>
+                    <td>Chorizo</td>
+                    <td>373</td>
+                    <td>2</td>
+                    <td>12.5</td>
+                    <td>31</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">14</th>
+                    <td>Paleta</td>
+                    <td>121</td>
+                    <td>3</td>
+                    <td>16</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">15</th>
+                    <td >Hamburguesa de Pollo</td>
+                    <td>153</td>
+                    <td>1.8</td>
+                    <td>20</td>
+                    <td>20.1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">16</th>
+                    <td >Panceta Ahumada</td>
+                    <td>558</td>
+                    <td>9</td>
+                    <td>58</td>
+                    <td>31</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">17</th>
+                    <td >Jamon Cocido</td>
+                    <td>126</td>
+                    <td>3</td>
+                    <td>20</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">18</th>
+                    <td >Carne de Pollo</td>
+                    <td>170</td>
+                    <td>0</td>
+                    <td>18.5</td>
+                    <td>10.2</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">19</th>
+                    <td >Merluza</td>
+                    <td>90</td>
+                    <td>0</td>
+                    <td>19.3</td>
+                    <td>0.8</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">20</th>
+                    <td >Salmon Rosado</td>
+                    <td>99</td>
+                    <td>0</td>
+                    <td>16.9</td>
+                    <td>0.8</td>
+                  </tr> 
+                </tbody>
+              </table>
+              <!-- End Table with stripped rows -->
+    
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="valor.html">Anterior</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="valor_2.html">Siguente</a></li>
+                </ul>
+              </nav><!-- End Basic Pagination -->
+            </div>
           </div>
         </div>
-          </div>
-       </div>
+      </div>
     </section>
 
+
   </main><!-- End #main -->
-  <br><br>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -306,7 +407,30 @@
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
   <script src="serviceworker.js"></script>
-  <script src="js/rejoj.js"></script>
+  <script> 
+        $(document).ready(function() {
+          var url = 'http://localhost:2700/api/valores';
+
+          $('#tablaValores').Datatable({
+            "ajax":{
+              "url": url,
+              "dataSrc":""
+            },
+            "columns":[
+              {"data":"id"},
+              {"data":"nombre"},
+              {"data":"calorias"},
+              {"data":"hc"},
+              {"data":"proteinas"},
+              {"data":"grasas"},
+            ],
+            "columnsDefs":""
+
+          });
+
+        });
+      </script>
+
 
 </body>
 

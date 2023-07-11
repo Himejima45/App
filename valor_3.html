@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>NutriApp | Receta Nutricional </title>
+  <title>NutriApp | Peso </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="img/icon.png" rel="icon">
+  <link href="img/favicon.ico" rel="icon">
 
   <!-- Vendor CSS Files -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,6 @@
   <link href="css/style.css" rel="stylesheet">
   <link rel="manifest" href="manifest.json">
   <link href="css/reloj.css" rel="stylesheet">
-
 <body>
 
   <!-- ======= Header ======= -->
@@ -36,7 +35,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="img/icon.png" alt="">
-        <span class="d-none d-lg-block">Nutri-Star</span>
+        <span class="d-none d-lg-block">NutriApp</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -257,31 +256,138 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Crear Receta Nutricional</h1>
+      <h1>Datos nutricionales</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item">Crear Receta</li>
+          <li class="breadcrumb-item">Valor nutricional</li>
         </ol>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
 
-    <section class="section">
+    <section class="section dashboard">
       <div class="row justify-content-center">
-      <div class="col-lg-8">
+        <div class="col-lg-11">
+
         <div class="row">
-        <div class="card info-card">
-          <img src="img/batidos_2.jpg" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title">Crear Receta</h5>
-            <button type="button" class="btn btn-success rounded-pill"><i class="bi bi-plus">Empezar</i></button>
+          <!-- <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Valor nutricional de alimentos</h5> -->
+              
+              <!-- Table with stripped rows -->
+              <table class="table">
+                <thead class="table-primary">
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Calorias</th>
+                    <th scope="col">Hc</th>
+                    <th scope="col">Proteinas</th>
+                    <th scope="col">Grasas</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <th scope="row">31</th>
+                    <td>Anchoas</td>
+                    <td>175</td>
+                    <td>0</td>
+                    <td>11.7</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">32</th>
+                    <td>Calamar</td>
+                    <td>78</td>
+                    <td>0</td>
+                    <td>78</td>
+                    <td>0.9</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">33</th>
+                    <td>Yogur con cereale</td>
+                    <td>48</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>0.05</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">34</th>
+                    <td >Mejillón</td>
+                    <td>95</td>
+                    <td>3.2</td>
+                    <td>14.4</td>
+                    <td>2.1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">35</th>
+                    <td >Ostra</td>
+                    <td>44</td>
+                    <td>3.5</td>
+                    <td>5.8</td>
+                    <td>0.5</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">36</th>
+                    <td >Pulpo</td>
+                    <td>56</td>
+                    <td>0</td>
+                    <td>12.6</td>
+                    <td>0.3</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">37</th>
+                    <td >Apio</td>
+                    <td>21</td>
+                    <td>5.1</td>
+                    <td>0.8</td>
+                    <td>0.2</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">38</th>
+                    <td >Arvejas</td>
+                    <td>84</td>
+                    <td>14.4</td>
+                    <td>6.3</td>
+                    <td>0.4</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">39</th>
+                    <td >Brocoli</td>
+                    <td>32</td>
+                    <td>7.1</td>
+                    <td>1.9</td>
+                    <td>0.3</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">40</th>
+                    <td >Calabaza</td>
+                    <td>26</td>
+                    <td>6.5</td>
+                    <td>1</td>
+                    <td>0.1</td>
+                  </tr> 
+                </tbody>
+              </table>
+              <!-- End Table with stripped rows -->
+    
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="valor_2.html">Anterior</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Siguente</a></li>
+                </ul>
+              </nav><!-- End Basic Pagination -->
+            </div>
           </div>
         </div>
-          </div>
-       </div>
+      </div>
     </section>
 
+
   </main><!-- End #main -->
-  <br><br>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -306,7 +412,30 @@
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
   <script src="serviceworker.js"></script>
-  <script src="js/rejoj.js"></script>
+  <script> 
+        $(document).ready(function() {
+          var url = 'http://localhost:2700/api/valores';
+
+          $('#tablaValores').Datatable({
+            "ajax":{
+              "url": url,
+              "dataSrc":""
+            },
+            "columns":[
+              {"data":"id"},
+              {"data":"nombre"},
+              {"data":"calorias"},
+              {"data":"hc"},
+              {"data":"proteinas"},
+              {"data":"grasas"},
+            ],
+            "columnsDefs":""
+
+          });
+
+        });
+      </script>
+
 
 </body>
 

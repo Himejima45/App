@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>NutriApp | Receta Nutricional </title>
+  <title>NutriApp | Peso </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="img/icon.png" rel="icon">
+  <link href="img/favicon.ico" rel="icon">
 
   <!-- Vendor CSS Files -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="img/icon.png" alt="">
-        <span class="d-none d-lg-block">Nutri-Star</span>
+        <span class="d-none d-lg-block">NutriApp</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -257,31 +257,138 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Crear Receta Nutricional</h1>
+      <h1>Datos nutricionales</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item">Crear Receta</li>
+          <li class="breadcrumb-item">Valor nutricional</li>
         </ol>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
 
-    <section class="section">
+    <section class="section dashboard">
       <div class="row justify-content-center">
-      <div class="col-lg-8">
+        <div class="col-lg-11">
+
         <div class="row">
-        <div class="card info-card">
-          <img src="img/batidos_2.jpg" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title">Crear Receta</h5>
-            <button type="button" class="btn btn-success rounded-pill"><i class="bi bi-plus">Empezar</i></button>
+          <!-- <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Valor nutricional de alimentos</h5> -->
+              
+              <!-- Table with stripped rows -->
+              <table class="table">
+                <thead class="table-primary">
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Calorias</th>
+                    <th scope="col">Hc</th>
+                    <th scope="col">Proteinas</th>
+                    <th scope="col">Grasas</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <th scope="row">21</th>
+                    <td>Cereal Mix</td>
+                    <td>375</td>
+                    <td>67.5</td>
+                    <td>9.5</td>
+                    <td>7.2</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">22</th>
+                    <td>Froot Loops</td>
+                    <td>367</td>
+                    <td>83.3</td>
+                    <td>6.7</td>
+                    <td>3.3</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">23</th>
+                    <td>Sémola</td>
+                    <td>346</td>
+                    <td>71</td>
+                    <td>12</td>
+                    <td>1.5</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">24</th>
+                    <td>All Bran</td>
+                    <td>233</td>
+                    <td>73.3</td>
+                    <td>13.3</td>
+                    <td>3.3</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">25</th>
+                    <td >Harina de Trigo</td>
+                    <td>345</td>
+                    <td>74.5</td>
+                    <td>9.5</td>
+                    <td>1.1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">26</th>
+                    <td >Harina integral de trigo</td>
+                    <td>333</td>
+                    <td>71</td>
+                    <td>12</td>
+                    <td>1.5</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">27</th>
+                    <td >Fideos</td>
+                    <td>369</td>
+                    <td>75.2</td>
+                    <td>12.5</td>
+                    <td>1.2</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">28</th>
+                    <td >Harina precocida Maiz</td>
+                    <td>355</td>
+                    <td>88.2</td>
+                    <td>0.3</td>
+                    <td>1.2</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">29</th>
+                    <td >Avena Nestum</td>
+                    <td>410</td>
+                    <td>71.5</td>
+                    <td>13</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">30</th>
+                    <td >Arroz Blanco</td>
+                    <td>343</td>
+                    <td>78.6</td>
+                    <td>6.7</td>
+                    <td>0.25</td>
+                  </tr> 
+                </tbody>
+              </table>
+              <!-- End Table with stripped rows -->
+    
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="valor_1.html">Anterior</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="valor_3.html">Siguente</a></li>
+                </ul>
+              </nav><!-- End Basic Pagination -->
+            </div>
           </div>
         </div>
-          </div>
-       </div>
+      </div>
     </section>
 
+
   </main><!-- End #main -->
-  <br><br>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -306,7 +413,30 @@
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
   <script src="serviceworker.js"></script>
-  <script src="js/rejoj.js"></script>
+  <script> 
+        $(document).ready(function() {
+          var url = 'http://localhost:2700/api/valores';
+
+          $('#tablaValores').Datatable({
+            "ajax":{
+              "url": url,
+              "dataSrc":""
+            },
+            "columns":[
+              {"data":"id"},
+              {"data":"nombre"},
+              {"data":"calorias"},
+              {"data":"hc"},
+              {"data":"proteinas"},
+              {"data":"grasas"},
+            ],
+            "columnsDefs":""
+
+          });
+
+        });
+      </script>
+
 
 </body>
 
