@@ -168,16 +168,16 @@
 
   <ul class="sidebar-nav" id="sidebar-nav">
 
-    <li class="nav-item">
-      <a class="nav-link " href="index.html">
+    <li class="nav-item ">
+      <a class="nav-link" href="index.html">
         <i class="bi bi-house"></i>
         <span>Inicio</span>
       </a>
     </li><!-- End Dashboard Nav -->
 
     
-    <li class="nav-item">
-      <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+    <li class="nav-item active">
+      <a class="nav-link collapsed active" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
         <i class="bi bi-flag"></i><span>Planes</span><i class="bi bi-chevron-down ms-auto"></i>
       </a>
       <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
@@ -215,21 +215,37 @@
           </a>
         </li>
         <li>
-          <a href="valor.html">
+          <a href="progress.html">
             <i class="bi bi-circle"></i><span>Peso</span>
           </a>
         </li>
+        <li>
+          <a href="valor.html">
+            <i class="bi bi-circle"></i><span>Valor de Alimentos</span>
+          </a>
+        </li>
       </ul>
-      <li class="nav-item">
-        <a class="nav-link collapsed"  href="alarm.html">
-          <i class="bi bi-gear"></i><span>Configuración</span>
-        </a>
-      </li>
     </li><!-- End Forms Nav -->
-
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-gear"></i><span>Configuración</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="alarm.html">
+            <i class="bi bi-circle"></i><span>Configuar Alarma</span>
+          </a>
+        </li>
+        <li>
+          <a href="config.html">
+            <i class="bi bi-circle"></i><span>Configuarar Cuenta</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Icons Nav -->
   </ul>
 
-</aside>
+</aside><!-- End Sidebar-->
 
   <main id="main" class="main">
 
@@ -242,13 +258,14 @@
       </nav>
     </div>
 
-    <section class="section">
-      <div class="row">
-        <div class="col-lg-12">
+    <section class="section dashboard">
+      <div class="row justify-content-center">
+        <div class="col-lg-11">
 
-          <div class="card">
+        <div class="row">
+          <!-- <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Valor nutricional de alimentos</h5>
+              <h5 class="card-title">Valor nutricional de alimentos</h5> -->
               
               <!-- Table with stripped rows -->
               <table class="table">
@@ -347,6 +364,16 @@
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->
+    
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Siguente</a></li>
+                </ul>
+              </nav><!-- End Basic Pagination -->
             </div>
           </div>
         </div>
