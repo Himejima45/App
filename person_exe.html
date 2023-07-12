@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>NutriApp | Logros y Metas </title>
+  <title>Nutri-Star | Inicio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="img/faviconn.ico" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/icon.png" rel="icon">
+  <link rel="manifest" href="manifest.json">
 
   <!-- Vendor CSS Files -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,6 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
-  <link rel="manifest" href="manifest.json">
   <link href="css/reloj.css" rel="stylesheet">
 
 <body>
@@ -35,7 +34,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="img/icon.png" alt="">
-        <span class="d-none d-lg-block">Nutri-Star</span>
+        <span class="d-none d-lg-block">Nutri-Star<span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -44,15 +43,9 @@
       <p class="fecha"></p>
       <p class="tiempo"></p>
      </div>
-     
+
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
-
-        <li class="nav-item d-block d-lg-none">
-          <a class="nav-link nav-icon search-bar-toggle " href="#">
-            <i class="bi bi-search"></i>
-          </a>
-        </li><!-- End Search Icon-->
 
         <li class="nav-item dropdown">
 
@@ -63,8 +56,7 @@
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
             <li class="dropdown-header">
-              You have 4 new notifications
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+              Tienes 4 notificaciones 
             </li>
             <li class="dropdown-item">
               <hr class="dropdown-divider">
@@ -122,7 +114,7 @@
               <hr class="dropdown-divider">
             </li>
             <li class="dropdown-footer">
-              <a href="#">Show all notifications</a>
+              <a href="#">Mostrar todas las notificaciones</a>
             </li>
 
           </ul><!-- End Notification Dropdown Items -->
@@ -146,14 +138,14 @@
 
             <li class="dropdown-item">
               <a class="dropdown-item d-flex align-items-center" href="user-profile.html">
-                <i class="bi bi-person-circle"></i>
+                <i class="bi bi-person"></i>
                 <span>Mi Perfil</span>
               </a>
             </li>
             <li class="dropdown-item">
               <hr class="dropdown-divider">
             </li>
-  
+
             <li class="dropdown-item">
               <a class="dropdown-item d-flex align-items-center" href="login.html">
                 <i class="bi bi-box-arrow-right"></i>
@@ -173,14 +165,14 @@
   <aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
-
+  
       <li class="nav-item ">
         <a class="nav-link" href="index.html">
           <i class="bi bi-house"></i>
           <span>Inicio</span>
         </a>
       </li><!-- End Dashboard Nav -->
-
+  
       
       <li class="nav-item active">
         <a class="nav-link collapsed active" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
@@ -227,7 +219,7 @@
           </li>
           <li class="dropdown-item">
             <a href="valor.html">
-              <i class="bi bi-circle"></i><span class="dropdown-item-color">Datos Nutricionales</span>
+              <i class="bi bi-circle"></i><span class="dropdown-item-color">Valor de Alimentos</span>
             </a>
           </li>
         </ul>
@@ -250,139 +242,131 @@
         </ul>
       </li><!-- End Icons Nav -->
     </ul>
-
+  
   </aside><!-- End Sidebar-->
+
   <main id="main" class="main">
-
+   
     <div class="pagetitle">
-      <h1>Logros y Metas</h1>
+      <h1>Creae Plan de Ejercicios</h1>
       <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">Progreso</li>
-        </ol>
+        <!-- <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        </ol> -->
       </nav>
-    </div><!-- End Page Title -->
-
-    <section class="section">
-      <div class="row">
-      <div class="col-lg-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Ingesta de Vitaminas</h5>
-
-            <!-- Bar Chart -->
-            <div id="barChart"></div>
-
-            <script>
-              document.addEventListener("DOMContentLoaded", () => {
-                new ApexCharts(document.querySelector("#barChart"), {
-                  series: [{
-                    data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
-                  }],
-                  chart: {
-                    type: 'bar',
-                    height: 350
-                  },
-                  plotOptions: {
-                    bar: {
-                      borderRadius: 4,
-                      horizontal: true,
-                    }
-                  },
-                  dataLabels: {
-                    enabled: false
-                  },
-                  xaxis: {
-                    categories: ['Vitamina A', 'Vitamina E', 'Vitamina C', 'Calcio', 'B1, B2 ,B3', 'Vitamina K', 'Biotina',
-                      'Tiamina ', 'Zinc', 'Hierro'
-                    ],
-                  }
-                }).render();
-              });
-            </script>
-            <!-- End Bar Chart -->
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Consumo de Alimentos Diario</h5>
-
-            <!-- Pie Chart -->
-            <div id="pieChart"></div>
-
-            <script>
-              document.addEventListener("DOMContentLoaded", () => {
-                new ApexCharts(document.querySelector("#pieChart"), {
-                  series: [20, 40, 15, 16, 22],
-                  chart: {
-                    height: 350,
-                    type: 'pie',
-                    toolbar: {
-                      show: true
-                    }
-                  },
-                  labels: ['Carbohidratos', 'Proteinas', 'Lipidos', 'Calorias', 'Energia']
-                }).render();
-              });
-            </script>
-            <!-- End Pie Chart -->
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Peso(kg)</h5>
-
-            <!-- Line Chart -->
-            <div id="lineChart"></div>
-
-            <script>
-              document.addEventListener("DOMContentLoaded", () => {
-                new ApexCharts(document.querySelector("#lineChart"), {
-                  series: [{
-                    name: "kg",
-                    data: [70, 73, 74, 78, 80, 82, 85,]
-                  }],
-                  chart: {
-                    height: 350,
-                    type: 'line',
-                    zoom: {
-                      enabled: false
-                    }
-                  },
-                  dataLabels: {
-                    enabled: false
-                  },
-                  stroke: {
-                    curve: 'straight'
-                  },
-                  grid: {
-                    row: {
-                      colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
-                      opacity: 0.5
-                    },
-                  },
-                  xaxis: {
-                    categories: ['55 kg', '65 kg', '75 kg', '85 kg', '90 kg', '95 kg', '100 kg'],
-                  }
-                }).render();
-              });
-            </script>
-            <!-- End Line Chart -->
-
-          </div>
-        </div>
-      </div>
     </div>
-    </section>
 
+    <section class="section dashboard">
+      <div class="row justify-content-center">
+
+        <!-- Left side columns -->
+        <div class="col-lg-11">
+          <div class="row">
+            
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Crear Plan Personalizado</h5>
+  
+                <!-- General Form Elements -->
+                <form>
+                  <div class="row mb-3">
+                    <label for="inputText" class="col-sm-2 col-form-label">Nombre del Plan</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  
+                  <div class="row mb-3">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Descripción</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" style="height: 100px"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Objetivo</label>
+                    <div class="col-sm-10">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccionar-----</option>
+                        <option value="1">Subir de Peso</option>
+                        <option value="2">Bajar de Peso</option>
+                        <option value="3">Buena Salud</option>
+                        <option value="3">Terapia</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">Grupo muscular</legend>
+                    <div class="col-sm-10">
+  
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                          Biceps y Triceps
+                        </label>
+                      </div>
+  
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                        <label class="form-check-label" for="gridCheck1">
+                         Pectorales
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                        <label class="form-check-label" for="gridCheck1">
+                         Espalda
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                        <label class="form-check-label" for="gridCheck1">
+                         Tren inferior
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                        <label class="form-check-label" for="gridCheck1">
+                         Tren Superior
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+  
+                  <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Horario</label>
+                    <div class="col-sm-10">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccionar-----</option>
+                        <option value="1">Lunes a Viernes</option>
+                        <option value="2">Lunes-Miercoles-Viernes</option>
+                        <option value="3">Lunes a Jueves</option>
+                        <option value="3">Martes-Jueves-Sabado</option>
+                      </select>
+                    </div>
+                  </div>
+        
+  
+                  <div class="row mb-3 text-center">
+                    <div class="col-sm-12">
+                      <button type="submit" class="btn btn-primary w-50">Crear</button>
+                    </div>
+                  </div>
+  
+                </form><!-- End General Form Elements -->
+  
+              </div>
+            </div>
+
+                </div>
+              </div>
+            </div>
+    </section>
 
   </main><!-- End #main -->
 
@@ -409,7 +393,6 @@
   <script src="js/main.js"></script>
   <script src="serviceworker.js"></script>
   <script src="js/rejoj.js"></script>
-
 
 </body>
 
