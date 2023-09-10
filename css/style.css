@@ -5,13 +5,17 @@
 :root {
   scroll-behavior: smooth;
 }
-
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Open Sans", sans-serif;
   background: #f6f9ff;
   color: #ffffff;
-  padding: 0%;
-  margin: 0;
+   overflow: auto;
 }
 
 a {
@@ -100,8 +104,8 @@ h6 {
 --------------------------------------------------------------*/
 /* Dropdown menus */
 .dropdown-menu {
-  border-radius: 4px;
-  padding: 10px 0;
+  border-radius: 10px;
+  padding: 6px 0;
   animation-name: dropdown-animate;
   animation-duration: 0.2s;
   animation-fill-mode: both;
@@ -113,8 +117,8 @@ h6 {
 .dropdown-menu .dropdown-header,
 .dropdown-menu .dropdown-footer {
   text-align: center;
-  font-size: 15px;
-  padding: 10px 25px;
+  font-size: 28px;
+  padding: 0px 5px;
 }
 
 .dropdown-menu .dropdown-footer a {
@@ -347,8 +351,8 @@ h6 {
 }
 
 .nav-tabs-bordered .nav-link.active {
-  background-color: #fff;
-  color: #c4c6d7;
+  background-color: #b81515;
+  color: #1e2fc0;
   border-bottom: 2px solid #4154f1;
 }
 
@@ -356,7 +360,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 .logo {
-  padding-inline: 10px;
+  padding-inline: 12px;
   line-height: 1;
 }
 
@@ -368,7 +372,7 @@ h6 {
 .logo span {
   font-size: 29px;
   font-weight: 730;
-  color: #ffffff;
+  color: #3224ee;
   font-family: "Nunito", sans-serif;
   right: 60px;
 }
@@ -376,78 +380,20 @@ h6 {
 .header {
   transition: all 0.5s;
   z-index: 997;
-  height: 60px;
+  height: 55px;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  background-color: rgb(40, 54, 67);
+  background-color: rgb(255, 255, 255);
   /* Toggle Sidebar Button */
   /* Search Bar */
 }
 
 .header .toggle-sidebar-btn {
   font-size: 32px;
-  cursor: pointer;
-  color: #ffffff;
+  cursor:pointer;
+  color: #3224ee;
 }
 
-.header .search-bar {
-  min-width: 360px;
-  padding: 0 20px;
-}
 
-@media (max-width: 1199px) {
-  .header .search-bar {
-    position: fixed;
-    top: 50px;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    box-shadow: 0px 0px 15px 0px rgba(1, 41, 112, 0.1);
-    background: white;
-    z-index: 9999;
-    transition: 0.3s;
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  .header .search-bar-show {
-    top: 60px;
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-.header .search-form {
-  width: 100%;
-}
-
-.header .search-form input {
-  border: 0;
-  font-size: 14px;
-  color: #000000;
-  border: 1px solid rgba(1, 41, 112, 0.2);
-  padding: 7px 38px 7px 8px;
-  border-radius: 3px;
-  transition: 0.3s;
-  width: 100%;
-}
-
-.header .search-form input:focus,
-.header .search-form input:hover {
-  outline: none;
-  box-shadow: 0 0 10px 0 rgba(1, 41, 112, 0.15);
-  border: 1px solid rgba(1, 41, 112, 0.3);
-}
-
-.header .search-form button {
-  border: 0;
-  padding: 0;
-  margin-left: -30px;
-  background: none;
-}
-
-.header .search-form button i {
-  color: #012970;
-}
 
 /*--------------------------------------------------------------
 # Header Nav
@@ -463,21 +409,21 @@ h6 {
 
 .header-nav .nav-icon {
   font-size: 22px;
-  color: #ffffff;
+  color: #3224ee;
   margin-right: 25px;
   position: relative;
 }
 
 .header-nav .nav-profile {
-  color: #ffffff;
+  color: #3224ee;
 }
 
 .header-nav .nav-profile img {
-  max-height: 43px;
+  max-height: 38px;
 }
 
 .header-nav .nav-profile span {
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -543,7 +489,7 @@ h6 {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #444444;
+  color: #ede8e8;
 }
 
 .header-nav .messages .message-item p {
@@ -563,30 +509,30 @@ h6 {
 }
 
 .header-nav .profile .dropdown-header h6 {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 0;
-  font-weight: 600;
-  color: #444444;
+  font-weight: 900;
+  color: #000;
 }
 
 .header-nav .profile .dropdown-header span {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .header-nav .profile .dropdown-item {
-  font-size: 14px;
+  font-size: 16px;
   padding: 10px 15px;
   transition: 0.3s;
 }
 
 .header-nav .profile .dropdown-item i {
   margin-right: 10px;
-  font-size: 18px;
+  font-size: 23px;
   line-height: 0;
 }
 
 .header-nav .profile .dropdown-item:hover {
-  background-color: rgb(40, 54, 67);
+  background-color: rgb(156, 156, 255);
 }
 /*--------------------------------------------------------------
 # Sidebar
@@ -599,12 +545,12 @@ h6 {
   width: 300px;
   z-index: 996;
   transition: all 0.3s;
-  padding: 15px;
+  padding: 19px;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: #aab7cf transparent;
-  box-shadow: 0px 0px 20px rgba(36, 75, 143, 0.1);
-  background-color: #58ebcdad;
+  scrollbar-color: #ffffff transparent;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+  background-color: #ffffff;
 }
 
 @media (max-width: 1199px) {
@@ -616,11 +562,11 @@ h6 {
 .sidebar::-webkit-scrollbar {
   width: 5px;
   height: 8px;
-  background-color: #fff;
+  background-color: #1c22ca;
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-  background-color: #aab7cf;
+  background-color: #1c22ca;
 }
 
 @media (min-width: 1200px) {
@@ -668,7 +614,7 @@ h6 {
 .sidebar-nav .nav-heading {
   font-size: 11px;
   text-transform: uppercase;
-  color: #13dcb3;
+  color: #ffffff;
   font-weight: 600;
   margin: 10px 0 5px 15px;
 }
@@ -678,35 +624,35 @@ h6 {
   align-items: center;
   font-size: 15px;
   font-weight: 600;
-  color: #ffffff;
+  color: #2b49b7;
   transition: 0.3;
-  background: rgb(40, 54, 67);
+  background: rgb(255, 255, 255);
   padding: 10px 15px;
   border-radius: 4px;
 }
 
 .sidebar-nav .nav-link i {
-  font-size: 16px;
+  font-size: 23px;
   margin-right: 10px;
-  color: #ffffff;
+  color: #3224ee;
 }
 
 .sidebar-nav .nav-link.collapsed {
-  color: #ffffff;
-  background: rgb(40, 54, 67);
+  color: #3224ee;
+  background: rgb(255, 255, 255);
 }
 
 .sidebar-nav .nav-link.collapsed i {
-  color: #ffffff;
+  color: #3224ee;
 }
 
 .sidebar-nav .nav-link:hover {
-  color: #ffffff;
-  background: #37ecc8;
+  color: #fff;
+  background: #3224ee;
 }
 
 .sidebar-nav .nav-link:hover i {
-  color: #0066cc;
+  color: #fff;
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
@@ -729,14 +675,14 @@ h6 {
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  color: #ffffff;
+  color: #3224ee;
   transition: 0.3;
   padding: 10px 0 10px 40px;
   transition: 0.3s;
 }
 
 .sidebar-nav .nav-content a i {
-  font-size: 6px;
+  font-size: 10px;
   margin-right: 8px;
   line-height: 0;
   border-radius: 50%;
@@ -744,11 +690,14 @@ h6 {
 
 .sidebar-nav .nav-content a:hover,
 .sidebar-nav .nav-content a.active {
-  color: #0066cc;
+  color: #3224ee;
 }
 
 .sidebar-nav .nav-content a.active i {
-  background-color: #4154f1;
+  background-color: #ffffff;
+}
+.sidebar-nav .nav-profile img {
+  max-height: 38px;
 }
 
 /*--------------------------------------------------------------
@@ -1227,10 +1176,10 @@ h6 {
 }
 
 .dropdown-item-color {
-  color: #283643;
+  color: #3429d3;
 }
 
 .dropdown-item:hover {
-  background-color: #2836437a;
+  background-color: #fff;
   margin-inline-start: 2.5rem;
 }
