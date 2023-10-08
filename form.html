@@ -13,8 +13,6 @@
   <link rel="manifest" href="manifest.json">
 
   <!-- Vendor CSS Files -->
-  <link rel="stylesheet" href="js/sweetalert2/dist/sweetalert2.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -22,7 +20,6 @@
   <link href="quill/quill.bubble.css" rel="stylesheet">
   <link href="remixicon/remixicon.css" rel="stylesheet">
   <link href="simple-datatables/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
@@ -279,19 +276,19 @@
         <ul role="tablist" class="nav bg-light nav-pills rounded-pill nav-fill mb-3">
           <li class="nav-item">
             <a data-toggle="pill" href="#nav-tab-card" class="nav-link active rounded-pill">
-                                <i class="fa fa-credit-card"></i>
+                                <i class="bi bi-credit-card"></i>
                                 Tarjeta de Credito
                             </a>
           </li>
           <li class="nav-item">
             <a data-toggle="pill" href="#nav-tab-paypal" class="nav-link rounded-pill">
-                                <i class="fa fa-paypal"></i>
+                                <i class="bi bi-paypal"></i>
                                 Paypal
                             </a>
           </li>
           <li class="nav-item">
             <a data-toggle="pill" href="#nav-tab-bank" class="nav-link rounded-pill">
-                                <i class="fa fa-university"></i>
+                                <i class="bi bi-bank"></i>
                                  Tranferir
                              </a>
           </li>
@@ -304,21 +301,20 @@
 
           <!-- credit card info-->
           <div id="nav-tab-card" class="tab-pane fade show active">
-            <p class="alert alert-success">Error al introducir los datod</p>
+            <p class="alert alert-success">Error al introducir los datos</p>
             <form role="form">
               <div class="form-group">
-                <label for="username">Full name (on the card)</label>
+                <label for="username">Nombre completo</label>
                 <input type="text" name="username" placeholder="Jason Doe" required class="form-control">
               </div>
               <div class="form-group">
-                <label for="cardNumber">Card number</label>
+                <label for="cardNumber">Numero de Tarjeta</label>
                 <div class="input-group">
-                  <input type="text" name="cardNumber" placeholder="Your card number" class="form-control" required>
+                  <input type="text" name="cardNumber" placeholder="Tu numero de tarjeta" class="form-control" required>
                   <div class="input-group-append">
                     <span class="input-group-text text-muted">
-                                                <i class="fa fa-cc-visa mx-1"></i>
-                                                <i class="fa fa-cc-amex mx-1"></i>
-                                                <i class="fa fa-cc-mastercard mx-1"></i>
+                                                <i class="ri ri-visa-fill mx-1"></i>
+                                                <i class="ri ri-mastercard-line mx-1"></i>
                                             </span>
                   </div>
                 </div>
@@ -326,17 +322,17 @@
               <div class="row">
                 <div class="col-sm-8">
                   <div class="form-group">
-                    <label><span class="hidden-xs">Expiration</span></label>
+                    <label><span class="hidden-xs">F.vencimiento</span></label>
                     <div class="input-group">
-                      <input type="number" placeholder="MM" name="" class="form-control" required>
-                      <input type="number" placeholder="YY" name="" class="form-control" required>
+                      <input type="number" placeholder="Mes" name="" class="form-control" required>
+                      <input type="number" placeholder="Año" name="" class="form-control" required>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-4">
                   <div class="form-group mb-4">
                     <label data-toggle="tooltip" title="Three-digits code on the back of your card">CVV
-                                                <i class="fa fa-question-circle"></i>
+                                                <i class="bi bi-question-circle"></i>
                                             </label>
                     <input type="text" required class="form-control">
                   </div>
@@ -345,16 +341,16 @@
 
 
               </div>
-              <button type="button" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Confirm  </button>
+              <button type="button" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Confirmar </button>
             </form>
           </div>
           <!-- End -->
 
           <!-- Paypal info -->
           <div id="nav-tab-paypal" class="tab-pane fade">
-            <p>Paypal is easiest way to pay online</p>
+            <p>PayPal es la forma más fácil de pagar en línea</p>
             <p>
-              <button type="button" class="btn btn-primary rounded-pill"><i class="fa fa-paypal mr-2"></i> Log into my Paypal</button>
+              <button type="button" class="btn btn-primary rounded-pill"><i class="bi bi-paypal mr-2"></i> Log into my Paypal</button>
             </p>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -363,13 +359,13 @@
 
           <!-- bank transfer info -->
           <div id="nav-tab-bank" class="tab-pane fade">
-            <h6>Bank account details</h6>
+            <h6>Datos de la cuenta bancaria</h6>
             <dl>
-              <dt>Bank</dt>
-              <dd> THE WORLD BANK</dd>
+              <dt>Banco</dt>
+              <dd> EL BANCO DEL MUNDO</dd>
             </dl>
             <dl>
-              <dt>Account number</dt>
+              <dt>Numero de cuentadt>
               <dd>7775877975</dd>
             </dl>
             <dl>
@@ -412,17 +408,12 @@
   <script src="php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-
-  <script src="js/calc.js"></script>
   <script src="js/payment.js"></script>
-  <script src="js/funciones.js"></script>
-  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script src="js/main.js"></script>
   <script src="serviceworker.js"></script>
   <script src="js/rejoj.js"></script>
-  <script src="js/sweetAlert.js"></script>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 
 </body>
