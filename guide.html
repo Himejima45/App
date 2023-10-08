@@ -274,7 +274,7 @@
           <img src="img/batidos_4.jpeg" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-title">Plan con Especialista</h5>
-            <a href="spec-profile.html" type="button" class="btn btn-primary rounded-pill"><i class="bi bi-star"> </i>Empezar</a>
+            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#mi-modal"><i class="bi bi-star"> </i>Empezar</button>
            </div>
           </div>
         <div class="card info-card">
@@ -286,6 +286,76 @@
             </a>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="mi-modal" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Este es el titulo</h5>
+        <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
+      </div>
+
+      <div class="modal-body text-center">
+
+        <div class="row">
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Basico</h5>
+                <h3>$0</h3>
+                <ul>
+                  <li>Especialista</li>
+                  <li>Entrenador</li>
+                  <li>Dieta personalizada</li>
+                  <li>consulta gratis</li>
+                </ul>
+                <a href="form.html" class="btn btn-primary">Comprar ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-primary">
+              <div class="card-body">
+                <h5 class="card-title">Pro</h5>
+                <h3>$20</h3>
+                <ul>
+                  <li class="list-group">Especialista</li>
+                  <li class="list-group">Entrenador</li>
+                  <li class="list-group">Dieta personalizada</li>
+                  <li class="list-group">consulta gratis</li>
+                </ul>
+                <a href="form.html" class="btn btn-primary">Comprar ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-primary">
+              <div class="card-body">
+                <h5 class="card-title">Premium</h5>
+                <h3>$45</h3>
+                <ul>
+                  <li class="list-group">Especialista</li>
+                  <li class="list-group">Entrenador</li>
+                  <li class="list-group">Dieta personalizada</li>
+                  <li class="list-group">Consulta gratis</li>
+                </ul>
+                <a href="form.html" class="btn btn-primary">Comprar ahora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
+        <button type="button" class="btn btn-primary">guardar</button>
+
+      </div>
+
     </div>
   </div>
 </div>

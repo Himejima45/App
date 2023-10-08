@@ -12,9 +12,9 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family:'Times New Roman', Times, serif;
   background: #f6f9ff;
-  color: #ffffff;
+  color: #000000;
    overflow: auto;
 }
 
@@ -63,7 +63,8 @@ h6 {
   font-size: 24px;
   margin-bottom: 0;
   font-weight: 600;
-  color: #0066cc;
+  color: #000000;
+  font-family:'Times New Roman', Times, serif;
 }
 
 /*--------------------------------------------------------------
@@ -221,17 +222,18 @@ h6 {
   margin-bottom: 30px;
   border: none;
   border-radius: 5px;
-  box-shadow: 0px 0 30px rgba(3, 20, 49, 0.1);
+  box-shadow: 0px 0 30px rgba(19, 100, 240, 0.1);
+  background-color: #ffff;
 }
 .card.info-card {
  padding: 0%;
- background-color: #fcfcfc;
+ background-color:  rgb(196, 251, 255);
 }
 
 .card-header,
 .card-footer {
   border-color: #ebeef4;
-  background-color: #fcfcfc;
+  background-color: #ac2222;
   color: #798eb3;
   padding: 15px;
 }
@@ -240,8 +242,8 @@ h6 {
   padding: 20px 0 15px 0;
   font-size: 23px;
   font-weight: 500;
-  color: #0066cc;
-  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-family:'Times New Roman', Times, serif;
 }
 
 .card-title span {
@@ -351,8 +353,8 @@ h6 {
 }
 
 .nav-tabs-bordered .nav-link.active {
-  background-color: #b81515;
-  color: #1e2fc0;
+  background-color: #1e2fc0;
+  color: #fff;
   border-bottom: 2px solid #4154f1;
 }
 
@@ -360,20 +362,20 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 .logo {
-  padding-inline: 12px;
+  padding-inline: 8px;
   line-height: 1;
 }
 
 .logo img {
-  max-height: 50px;
+  max-height: 60px;
   margin-right: 6px;
 }
 
 .logo span {
   font-size: 29px;
   font-weight: 730;
-  color: #3224ee;
-  font-family: "Nunito", sans-serif;
+  color: #ffffff;
+  font-family:'Times New Roman', Times, serif;
   right: 60px;
 }
 
@@ -382,7 +384,7 @@ h6 {
   z-index: 997;
   height: 55px;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(8, 51, 162);
   /* Toggle Sidebar Button */
   /* Search Bar */
 }
@@ -390,7 +392,7 @@ h6 {
 .header .toggle-sidebar-btn {
   font-size: 32px;
   cursor:pointer;
-  color: #3224ee;
+  color: #ffffff;
 }
 
 
@@ -408,14 +410,14 @@ h6 {
 }
 
 .header-nav .nav-icon {
-  font-size: 22px;
-  color: #3224ee;
+  font-size: 20px;
+  color: #ffffff;
   margin-right: 25px;
   position: relative;
 }
 
 .header-nav .nav-profile {
-  color: #3224ee;
+  color: #ffffff;
 }
 
 .header-nav .nav-profile img {
@@ -423,7 +425,7 @@ h6 {
 }
 
 .header-nav .nav-profile span {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -539,7 +541,7 @@ h6 {
 --------------------------------------------------------------*/
 .sidebar {
   position: fixed;
-  top: 60px;
+  top: 50px;
   left: 0;
   bottom: 0;
   width: 300px;
@@ -550,7 +552,7 @@ h6 {
   scrollbar-width: thin;
   scrollbar-color: #ffffff transparent;
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
-  background-color: #ffffff;
+  background-color:  rgb(8, 51, 162);
 }
 
 @media (max-width: 1199px) {
@@ -624,9 +626,9 @@ h6 {
   align-items: center;
   font-size: 15px;
   font-weight: 600;
-  color: #2b49b7;
+  color: #0c2555;
   transition: 0.3;
-  background: rgb(255, 255, 255);
+  background:rgb(255, 255, 255);
   padding: 10px 15px;
   border-radius: 4px;
 }
@@ -634,21 +636,21 @@ h6 {
 .sidebar-nav .nav-link i {
   font-size: 23px;
   margin-right: 10px;
-  color: #3224ee;
+  color: #0c2555;
 }
 
 .sidebar-nav .nav-link.collapsed {
-  color: #3224ee;
-  background: rgb(255, 255, 255);
+  color: #0c2555;
+  background:rgb(255, 255, 255);
 }
 
 .sidebar-nav .nav-link.collapsed i {
-  color: #3224ee;
+  color: #0c2555;
 }
 
 .sidebar-nav .nav-link:hover {
   color: #fff;
-  background: #3224ee;
+  background: #5983d1;
 }
 
 .sidebar-nav .nav-link:hover i {
@@ -675,7 +677,7 @@ h6 {
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  color: #3224ee;
+  color: #ffffff;
   transition: 0.3;
   padding: 10px 0 10px 40px;
   transition: 0.3s;
@@ -1176,10 +1178,5 @@ h6 {
 }
 
 .dropdown-item-color {
-  color: #3429d3;
-}
-
-.dropdown-item:hover {
-  background-color: #fff;
-  margin-inline-start: 2.5rem;
+  color: #ffffff;
 }
